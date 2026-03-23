@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Siti Sarah Annisa – Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+    <span class="serif font-bold text-lg" style="color:var(--espresso)">SSA</span>
+    <div class="flex gap-8 text-sm font-medium" style="color:var(--latte)">
+      <a href="#tentang" class="hover:text-espresso transition-colors">Tentang</a>
+      <a href="#pengalaman" class="hover:text-espresso transition-colors">Pengalaman</a>
+      <a href="#keahlian" class="hover:text-espresso transition-colors">Keahlian</a>
+      <a href="#kontak" class="hover:text-espresso transition-colors">Kontak</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="px-6">
+  <!-- BG Blobs -->
+  <div class="hero-bg-circle" style="width:500px;height:500px;right:-100px;top:-100px;"></div>
+  <div class="hero-bg-circle" style="width:300px;height:300px;left:-50px;bottom:50px;background:var(--latte);opacity:0.15;"></div>
+
+  <div class="max-w-5xl mx-auto w-full pt-24 pb-16 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+    <!-- Text -->
+    <div>
+      <p class="section-label mb-4">Portfolio</p>
+      <h1 class="text-5xl md:text-6xl font-black leading-tight mb-4" style="color:var(--espresso)">
+        Siti<br/>
+        <span style="color:var(--accent)">Sarah</span><br/>
+        Annisa
+      </h1>
+      <p class="text-base leading-relaxed mb-8 max-w-sm" style="color:var(--latte)">
+        Barista & Team Leader berpengalaman dengan semangat tinggi dalam menciptakan pengalaman kafe yang berkesan — dari espresso hingga manajemen tim.
+      </p>
+      <div class="flex gap-4 flex-wrap">
+        <a href="#pengalaman" class="px-6 py-3 rounded-full text-sm font-medium text-white transition-all hover:opacity-90" style="background:var(--espresso)">Lihat Pengalaman</a>
+        <a href="#kontak" class="px-6 py-3 rounded-full text-sm font-medium border transition-all hover:bg-espresso hover:text-white" style="border-color:var(--latte);color:var(--latte)">Hubungi Saya</a>
+      </div>
+    </div>
+
+    <!-- Coffee cup illustration -->
+    <div class="flex justify-center">
+      <div class="relative">
+        <!-- Steam -->
+        <svg class="absolute -top-14 left-1/2 -translate-x-1/2" width="80" height="60" viewBox="0 0 80 60" fill="none">
+          <path class="steam-line" d="M20 50 Q18 30 22 10" stroke="#A0724A" stroke-width="2.5" stroke-linecap="round" opacity="0"/>
+          <path class="steam-line" d="M40 55 Q36 35 42 5" stroke="#A0724A" stroke-width="2.5" stroke-linecap="round" opacity="0"/>
+          <path class="steam-line" d="M60 50 Q62 30 58 10" stroke="#A0724A" stroke-width="2.5" stroke-linecap="round" opacity="0"/>
+        </svg>
+        <!-- Cup -->
+        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Saucer -->
+          <ellipse cx="100" cy="175" rx="75" ry="12" fill="#D4B896"/>
+          <!-- Cup body -->
+          <path d="M45 90 L55 165 Q100 175 145 165 L155 90 Z" fill="white" stroke="#D4B896" stroke-width="2"/>
+          <!-- Cup top -->
+          <ellipse cx="100" cy="90" rx="55" ry="14" fill="#EDE0D0"/>
+          <!-- Coffee surface -->
+          <ellipse cx="100" cy="90" rx="48" ry="11" fill="#6B3F1F"/>
+          <!-- Latte art heart -->
+          <path d="M93 87 Q100 80 107 87 Q113 82 107 90 Q100 96 93 90 Q87 82 93 87Z" fill="#A0724A" opacity="0.7"/>
+          <!-- Handle -->
+          <path d="M155 100 Q180 100 180 130 Q180 160 155 155" stroke="#D4B896" stroke-width="8" stroke-linecap="round" fill="none"/>
+          <!-- Cup detail lines -->
+          <path d="M55 115 Q100 120 145 115" stroke="#EDE0D0" stroke-width="1.5" opacity="0.6"/>
+          <path d="M53 135 Q100 142 147 135" stroke="#EDE0D0" stroke-width="1.5" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section id="tentang" class="py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="fancy-divider mb-12 fade-up">
+      <span class="section-label">Tentang Saya</span>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10 items-start">
+      <div class="md:col-span-2 fade-up">
+        <h2 class="serif text-4xl font-bold mb-6" style="color:var(--espresso)">Passion untuk Kopi & Pelayanan Terbaik</h2>
+        <p class="leading-relaxed mb-4" style="color:var(--latte)">
+          Dengan pengalaman lebih dari 3 tahun di industri F&B, saya telah menempuh perjalanan dari <em>Crew Kitchen</em> hingga <em>Team Leader Barista</em>. Saya percaya bahwa secangkir kopi yang sempurna dimulai dari kalibrasi yang tepat, steam susu yang halus, dan perhatian penuh pada setiap detail.
+        </p>
+        <p class="leading-relaxed" style="color:var(--latte)">
+          Di luar mesin espresso, saya terbiasa mengelola stok bahan baku, memimpin tim, melayani kasir, hingga memastikan standar kebersihan toko terpenuhi setiap hari.
+        </p>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="exp-card text-center">
+          <p class="serif text-4xl font-black" style="color:var(--accent)">3+</p>
+          <p class="text-xs mt-1" style="color:var(--latte)">Tahun Pengalaman</p>
+        </div>
+        <div class="exp-card text-center">
+          <p class="serif text-4xl font-black" style="color:var(--accent)">4</p>
+          <p class="text-xs mt-1" style="color:var(--latte)">Tempat Kerja</p>
+        </div>
+        <div class="exp-card text-center col-span-2">
+          <p class="serif text-3xl font-black" style="color:var(--accent)">Team Leader</p>
+          <p class="text-xs mt-1" style="color:var(--latte)">Posisi Terakhir</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PENGALAMAN -->
+<section id="pengalaman" class="py-20 px-6" style="background:var(--foam)">
+  <div class="max-w-5xl mx-auto">
+    <div class="fancy-divider mb-12 fade-up">
+      <span class="section-label">Pengalaman Kerja</span>
+    </div>
+    <h2 class="serif text-4xl font-bold mb-14 fade-up" style="color:var(--espresso)">Perjalanan Karier</h2>
+
+    <!-- Timeline -->
+    <div class="relative pl-10">
+      <div class="timeline-line"></div>
+
+      <!-- Job 1 -->
+      <div class="mb-12 fade-up">
+        <div class="timeline-dot" style="top:12px"></div>
+        <div class="exp-card">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="role-badge mb-2 block w-fit">Team Leader — Barista</span>
+              <h3 class="serif text-xl font-bold" style="color:var(--espresso)">Canda Tawa Caffe</h3>
+              <p class="text-sm mt-1" style="color:var(--latte)">Jl. RE Martadinata, Palembang</p>
+            </div>
+            <span class="text-xs font-medium px-3 py-1 rounded-full" style="background:var(--steam);color:var(--espresso)">Agu 2024 – Okt 2025</span>
+          </div>
+          <ul class="space-y-2 text-sm" style="color:var(--latte)">
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengecek SOP kalibrasi espresso, cara steam susu, dan takaran minuman</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengecek kebersihan toko dan pelayanan kasir</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengontrol stok bahan barista di gudang central dan distribusi ke toko</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Menghitung stock opname toko setiap bulan</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Ikut serta dalam pelayanan toko meliputi kasir dan barista</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="mb-12 fade-up">
+        <div class="timeline-dot" style="top:12px"></div>
+        <div class="exp-card">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="role-badge mb-2 block w-fit">Crew Leader Toko</span>
+              <h3 class="serif text-xl font-bold" style="color:var(--espresso)">Canda Tawa Caffe</h3>
+              <p class="text-sm mt-1" style="color:var(--latte)">Jl. RE Martadinata, Palembang</p>
+            </div>
+            <span class="text-xs font-medium px-3 py-1 rounded-full" style="background:var(--steam);color:var(--espresso)">Feb 2024 – Agu 2024</span>
+          </div>
+          <ul class="space-y-2 text-sm" style="color:var(--latte)">
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Melakukan closing dan setoran uang penjualan toko</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengurus semua nota belanjaan toko</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengecek SOP makanan dan minuman sesuai standar</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengontrol dan mengarahkan kondisi toko saat ramai</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="mb-12 fade-up">
+        <div class="timeline-dot" style="top:12px"></div>
+        <div class="exp-card">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="role-badge mb-2 block w-fit">Crew Barista</span>
+              <h3 class="serif text-xl font-bold" style="color:var(--espresso)">Canda Tawa Caffe</h3>
+              <p class="text-sm mt-1" style="color:var(--latte)">Jl. RE Martadinata, Palembang</p>
+            </div>
+            <span class="text-xs font-medium px-3 py-1 rounded-full" style="background:var(--steam);color:var(--espresso)">Jul 2023 – Jan 2024</span>
+          </div>
+          <ul class="space-y-2 text-sm" style="color:var(--latte)">
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengoperasikan komputer dan menginput pesanan customer</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Melayani customer dengan ramah dan aktif</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Membuat espresso dan minuman sesuai pesanan customer</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Melakukan gathering cleaning sebulan sekali</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Job 4 -->
+      <div class="mb-12 fade-up">
+        <div class="timeline-dot" style="top:12px"></div>
+        <div class="exp-card">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="role-badge mb-2 block w-fit">Cook Helper</span>
+              <h3 class="serif text-xl font-bold" style="color:var(--espresso)">Chikin Indonesia</h3>
+              <p class="text-sm mt-1" style="color:var(--latte)">Jl. Bangau, Palembang</p>
+            </div>
+            <span class="text-xs font-medium px-3 py-1 rounded-full" style="background:var(--steam);color:var(--espresso)">Jul 2022 – Des 2022</span>
+          </div>
+          <ul class="space-y-2 text-sm" style="color:var(--latte)">
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Menggoreng ayam dan menyiapkan sauce sesuai pesanan masuk</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Menginput pesanan offline maupun online saat staff kasir libur</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Job 5 -->
+      <div class="fade-up">
+        <div class="timeline-dot" style="top:12px"></div>
+        <div class="exp-card">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="role-badge mb-2 block w-fit">Crew Kitchen</span>
+              <h3 class="serif text-xl font-bold" style="color:var(--espresso)">Nasi Bakar Pakjo</h3>
+              <p class="text-sm mt-1" style="color:var(--latte)">Jl. Veteran, Palembang</p>
+            </div>
+            <span class="text-xs font-medium px-3 py-1 rounded-full" style="background:var(--steam);color:var(--espresso)">Jul 2021 – Apr 2022</span>
+          </div>
+          <ul class="space-y-2 text-sm" style="color:var(--latte)">
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Membuat stok topping nasi bakar dari bahan mentah ke matang</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Menyiapkan semua topping, sauce, dan kuah saat prepare pagi</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> List bumbu yang habis setiap minggu dan gathering cleaning rutin</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEAHLIAN -->
+<section id="keahlian" class="py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="fancy-divider mb-12 fade-up">
+      <span class="section-label">Keahlian</span>
+    </div>
+    <h2 class="serif text-4xl font-bold mb-12 fade-up" style="color:var(--espresso)">Yang Bisa Saya Lakukan</h2>
+
+    <div class="flex flex-wrap gap-4 mb-16 fade-up">
+      <div class="skill-pill">☕ Mesin Espresso</div>
+      <div class="skill-pill">⚙️ Mesin Grinder</div>
+      <div class="skill-pill">🥛 Steam Susu</div>
+      <div class="skill-pill">📋 Kalibrasi SOP</div>
+      <div class="skill-pill">💻 Microsoft Excel</div>
+      <div class="skill-pill">📄 Microsoft Word</div>
+      <div class="skill-pill">🖥️ Sistem Kasir (POS)</div>
+      <div class="skill-pill">👥 Manajemen Tim</div>
+      <div class="skill-pill">📦 Stock Opname</div>
+      <div class="skill-pill">🧾 Administrasi Nota</div>
+    </div>
+
+    <!-- Education -->
+    <div class="fancy-divider mb-12 fade-up">
+      <span class="section-label">Pendidikan</span>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 fade-up">
+      <div class="exp-card">
+        <p class="text-xs mb-2" style="color:var(--accent)">2017 – 2020</p>
+        <h3 class="serif font-bold text-lg" style="color:var(--espresso)">SMA Dharma Bhakti</h3>
+        <p class="text-sm mt-1" style="color:var(--latte)">Palembang · Jurusan IPA</p>
+      </div>
+      <div class="exp-card">
+        <p class="text-xs mb-2" style="color:var(--accent)">2014 – 2017</p>
+        <h3 class="serif font-bold text-lg" style="color:var(--espresso)">SMP Negeri 21</h3>
+        <p class="text-sm mt-1" style="color:var(--latte)">Palembang</p>
+      </div>
+      <div class="exp-card">
+        <p class="text-xs mb-2" style="color:var(--accent)">2008 – 2014</p>
+        <h3 class="serif font-bold text-lg" style="color:var(--espresso)">SD Negeri 213</h3>
+        <p class="text-sm mt-1" style="color:var(--latte)">Palembang</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="py-24 px-6" style="background:var(--espresso)">
+  <div class="max-w-5xl mx-auto text-center">
+    <p class="section-label mb-4 fade-up" style="color:var(--steam)">Kontak</p>
+    <h2 class="serif text-4xl md:text-5xl font-bold mb-6 fade-up" style="color:var(--cream)">Mari Terhubung</h2>
+    <p class="mb-12 fade-up" style="color:var(--steam)">Palembang, Sumatera Selatan</p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto fade-up">
+      <a href="tel:+62895605394796" class="contact-chip flex-1 justify-center" style="color:var(--espresso)">
+        <span style="color:var(--accent)">📞</span>
+        <span>+62 895-6053-94796</span>
+      </a>
+      <a href="mailto:sitisarahanisa@gmail.com" class="contact-chip flex-1 justify-center" style="color:var(--espresso)">
+        <span style="color:var(--accent)">✉️</span>
+        <span>sitisarahanisa@gmail.com</span>
+      </a>
+    </div>
+
+    <p class="mt-16 text-xs fade-up" style="color:var(--latte)">© 2025 Siti Sarah Annisa · Dibuat dengan ♥ dari Palembang</p>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
