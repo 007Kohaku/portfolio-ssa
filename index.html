@@ -6,35 +6,50 @@
   <title>Siti Sarah Annisa – Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-<!-- Custom cursor -->
+<!-- Custom Cursor -->
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- NAV -->
+<!-- ===== NAV ===== -->
 <nav>
   <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
     <span class="serif font-bold text-lg" style="color:var(--espresso)">SSA</span>
-    <div class="flex gap-8 text-sm font-medium" style="color:var(--latte)">
-      <a href="#tentang" class="hover:text-espresso transition-colors">Tentang</a>
-      <a href="#pengalaman" class="hover:text-espresso transition-colors">Pengalaman</a>
-      <a href="#keahlian" class="hover:text-espresso transition-colors">Keahlian</a>
-      <a href="#kontak" class="hover:text-espresso transition-colors">Kontak</a>
+
+    <!-- Desktop menu -->
+    <div id="nav-desktop">
+      <a href="#tentang">Tentang</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#kontak">Kontak</a>
     </div>
+
+    <!-- Hamburger button -->
+    <button id="ham-btn" aria-label="Toggle menu">
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div id="mobile-menu">
+    <a href="#tentang">Tentang</a>
+    <a href="#pengalaman">Pengalaman</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#kontak">Kontak</a>
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- ===== HERO ===== -->
 <section id="hero" class="px-6">
-  <!-- BG Blobs -->
   <div class="hero-bg-circle" style="width:500px;height:500px;right:-100px;top:-100px;"></div>
   <div class="hero-bg-circle" style="width:300px;height:300px;left:-50px;bottom:50px;background:var(--latte);opacity:0.15;"></div>
 
   <div class="max-w-5xl mx-auto w-full pt-24 pb-16 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-    <!-- Text -->
     <div>
       <p class="section-label mb-4">Portfolio</p>
       <h1 class="text-5xl md:text-6xl font-black leading-tight mb-4" style="color:var(--espresso)">
@@ -43,38 +58,29 @@
         Annisa
       </h1>
       <p class="text-base leading-relaxed mb-8 max-w-sm" style="color:var(--latte)">
-        Barista & Team Leader berpengalaman dengan semangat tinggi dalam menciptakan pengalaman kafe yang berkesan — dari espresso hingga manajemen tim.
+        Barista &amp; Team Leader berpengalaman dengan semangat tinggi dalam menciptakan pengalaman kafe yang berkesan — dari espresso hingga manajemen tim.
       </p>
       <div class="flex gap-4 flex-wrap">
         <a href="#pengalaman" class="px-6 py-3 rounded-full text-sm font-medium text-white transition-all hover:opacity-90" style="background:var(--espresso)">Lihat Pengalaman</a>
-        <a href="#kontak" class="px-6 py-3 rounded-full text-sm font-medium border transition-all hover:bg-espresso hover:text-white" style="border-color:var(--latte);color:var(--latte)">Hubungi Saya</a>
+        <a href="#kontak" class="px-6 py-3 rounded-full text-sm font-medium border transition-all" style="border-color:var(--latte);color:var(--latte)">Hubungi Saya</a>
       </div>
     </div>
 
-    <!-- Coffee cup illustration -->
+    <!-- Coffee Cup Illustration -->
     <div class="flex justify-center">
       <div class="relative">
-        <!-- Steam -->
         <svg class="absolute -top-14 left-1/2 -translate-x-1/2" width="80" height="60" viewBox="0 0 80 60" fill="none">
           <path class="steam-line" d="M20 50 Q18 30 22 10" stroke="#A0724A" stroke-width="2.5" stroke-linecap="round" opacity="0"/>
           <path class="steam-line" d="M40 55 Q36 35 42 5" stroke="#A0724A" stroke-width="2.5" stroke-linecap="round" opacity="0"/>
           <path class="steam-line" d="M60 50 Q62 30 58 10" stroke="#A0724A" stroke-width="2.5" stroke-linecap="round" opacity="0"/>
         </svg>
-        <!-- Cup -->
         <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Saucer -->
           <ellipse cx="100" cy="175" rx="75" ry="12" fill="#D4B896"/>
-          <!-- Cup body -->
           <path d="M45 90 L55 165 Q100 175 145 165 L155 90 Z" fill="white" stroke="#D4B896" stroke-width="2"/>
-          <!-- Cup top -->
           <ellipse cx="100" cy="90" rx="55" ry="14" fill="#EDE0D0"/>
-          <!-- Coffee surface -->
           <ellipse cx="100" cy="90" rx="48" ry="11" fill="#6B3F1F"/>
-          <!-- Latte art heart -->
           <path d="M93 87 Q100 80 107 87 Q113 82 107 90 Q100 96 93 90 Q87 82 93 87Z" fill="#A0724A" opacity="0.7"/>
-          <!-- Handle -->
           <path d="M155 100 Q180 100 180 130 Q180 160 155 155" stroke="#D4B896" stroke-width="8" stroke-linecap="round" fill="none"/>
-          <!-- Cup detail lines -->
           <path d="M55 115 Q100 120 145 115" stroke="#EDE0D0" stroke-width="1.5" opacity="0.6"/>
           <path d="M53 135 Q100 142 147 135" stroke="#EDE0D0" stroke-width="1.5" opacity="0.6"/>
         </svg>
@@ -83,7 +89,7 @@
   </div>
 </section>
 
-<!-- TENTANG -->
+<!-- ===== TENTANG ===== -->
 <section id="tentang" class="py-20 px-6">
   <div class="max-w-5xl mx-auto">
     <div class="fancy-divider mb-12 fade-up">
@@ -91,9 +97,9 @@
     </div>
     <div class="grid md:grid-cols-3 gap-10 items-start">
       <div class="md:col-span-2 fade-up">
-        <h2 class="serif text-4xl font-bold mb-6" style="color:var(--espresso)">Passion untuk Kopi & Pelayanan Terbaik</h2>
+        <h2 class="serif text-4xl font-bold mb-6" style="color:var(--espresso)">Passion untuk Kopi &amp; Pelayanan Terbaik</h2>
         <p class="leading-relaxed mb-4" style="color:var(--latte)">
-          Dengan pengalaman lebih dari 3 tahun di industri F&B, saya telah menempuh perjalanan dari <em>Crew Kitchen</em> hingga <em>Team Leader Barista</em>. Saya percaya bahwa secangkir kopi yang sempurna dimulai dari kalibrasi yang tepat, steam susu yang halus, dan perhatian penuh pada setiap detail.
+          Dengan pengalaman lebih dari 3 tahun di industri F&amp;B, saya telah menempuh perjalanan dari <em>Crew Kitchen</em> hingga <em>Team Leader Barista</em>. Saya percaya bahwa secangkir kopi yang sempurna dimulai dari kalibrasi yang tepat, steam susu yang halus, dan perhatian penuh pada setiap detail.
         </p>
         <p class="leading-relaxed" style="color:var(--latte)">
           Di luar mesin espresso, saya terbiasa mengelola stok bahan baku, memimpin tim, melayani kasir, hingga memastikan standar kebersihan toko terpenuhi setiap hari.
@@ -117,7 +123,7 @@
   </div>
 </section>
 
-<!-- PENGALAMAN -->
+<!-- ===== PENGALAMAN ===== -->
 <section id="pengalaman" class="py-20 px-6" style="background:var(--foam)">
   <div class="max-w-5xl mx-auto">
     <div class="fancy-divider mb-12 fade-up">
@@ -125,7 +131,6 @@
     </div>
     <h2 class="serif text-4xl font-bold mb-14 fade-up" style="color:var(--espresso)">Perjalanan Karier</h2>
 
-    <!-- Timeline -->
     <div class="relative pl-10">
       <div class="timeline-line"></div>
 
@@ -142,11 +147,11 @@
             <span class="text-xs font-medium px-3 py-1 rounded-full" style="background:var(--steam);color:var(--espresso)">Agu 2024 – Okt 2025</span>
           </div>
           <ul class="space-y-2 text-sm" style="color:var(--latte)">
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengecek SOP kalibrasi espresso, cara steam susu, dan takaran minuman</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengecek kebersihan toko dan pelayanan kasir</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengontrol stok bahan barista di gudang central dan distribusi ke toko</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Menghitung stock opname toko setiap bulan</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Ikut serta dalam pelayanan toko meliputi kasir dan barista</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Mengecek SOP kalibrasi espresso, cara steam susu, dan takaran minuman</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Mengecek kebersihan toko dan pelayanan kasir</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Mengontrol stok bahan barista di gudang central dan distribusi ke toko</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Menghitung stock opname toko setiap bulan</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Ikut serta dalam pelayanan toko meliputi kasir dan barista</li>
           </ul>
         </div>
       </div>
@@ -164,10 +169,10 @@
             <span class="text-xs font-medium px-3 py-1 rounded-full" style="background:var(--steam);color:var(--espresso)">Feb 2024 – Agu 2024</span>
           </div>
           <ul class="space-y-2 text-sm" style="color:var(--latte)">
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Melakukan closing dan setoran uang penjualan toko</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengurus semua nota belanjaan toko</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengecek SOP makanan dan minuman sesuai standar</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengontrol dan mengarahkan kondisi toko saat ramai</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Melakukan closing dan setoran uang penjualan toko</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Mengurus semua nota belanjaan toko</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Mengecek SOP makanan dan minuman sesuai standar</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Mengontrol dan mengarahkan kondisi toko saat ramai</li>
           </ul>
         </div>
       </div>
@@ -185,10 +190,10 @@
             <span class="text-xs font-medium px-3 py-1 rounded-full" style="background:var(--steam);color:var(--espresso)">Jul 2023 – Jan 2024</span>
           </div>
           <ul class="space-y-2 text-sm" style="color:var(--latte)">
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Mengoperasikan komputer dan menginput pesanan customer</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Melayani customer dengan ramah dan aktif</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Membuat espresso dan minuman sesuai pesanan customer</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Melakukan gathering cleaning sebulan sekali</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Mengoperasikan komputer dan menginput pesanan customer</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Melayani customer dengan ramah dan aktif</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Membuat espresso dan minuman sesuai pesanan customer</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Melakukan gathering cleaning sebulan sekali</li>
           </ul>
         </div>
       </div>
@@ -206,8 +211,8 @@
             <span class="text-xs font-medium px-3 py-1 rounded-full" style="background:var(--steam);color:var(--espresso)">Jul 2022 – Des 2022</span>
           </div>
           <ul class="space-y-2 text-sm" style="color:var(--latte)">
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Menggoreng ayam dan menyiapkan sauce sesuai pesanan masuk</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Menginput pesanan offline maupun online saat staff kasir libur</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Menggoreng ayam dan menyiapkan sauce sesuai pesanan masuk</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Menginput pesanan offline maupun online saat staff kasir libur</li>
           </ul>
         </div>
       </div>
@@ -225,9 +230,9 @@
             <span class="text-xs font-medium px-3 py-1 rounded-full" style="background:var(--steam);color:var(--espresso)">Jul 2021 – Apr 2022</span>
           </div>
           <ul class="space-y-2 text-sm" style="color:var(--latte)">
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Membuat stok topping nasi bakar dari bahan mentah ke matang</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> Menyiapkan semua topping, sauce, dan kuah saat prepare pagi</li>
-            <li class="flex gap-2"><span style="color:var(--accent)">✦</span> List bumbu yang habis setiap minggu dan gathering cleaning rutin</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Membuat stok topping nasi bakar dari bahan mentah ke matang</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> Menyiapkan semua topping, sauce, dan kuah saat prepare pagi</li>
+            <li class="flex gap-2"><span style="color:var(--accent)">&#10022;</span> List bumbu yang habis setiap minggu dan gathering cleaning rutin</li>
           </ul>
         </div>
       </div>
@@ -235,7 +240,7 @@
   </div>
 </section>
 
-<!-- KEAHLIAN -->
+<!-- ===== KEAHLIAN ===== -->
 <section id="keahlian" class="py-20 px-6">
   <div class="max-w-5xl mx-auto">
     <div class="fancy-divider mb-12 fade-up">
@@ -244,19 +249,19 @@
     <h2 class="serif text-4xl font-bold mb-12 fade-up" style="color:var(--espresso)">Yang Bisa Saya Lakukan</h2>
 
     <div class="flex flex-wrap gap-4 mb-16 fade-up">
-      <div class="skill-pill">☕ Mesin Espresso</div>
-      <div class="skill-pill">⚙️ Mesin Grinder</div>
-      <div class="skill-pill">🥛 Steam Susu</div>
-      <div class="skill-pill">📋 Kalibrasi SOP</div>
-      <div class="skill-pill">💻 Microsoft Excel</div>
-      <div class="skill-pill">📄 Microsoft Word</div>
-      <div class="skill-pill">🖥️ Sistem Kasir (POS)</div>
-      <div class="skill-pill">👥 Manajemen Tim</div>
-      <div class="skill-pill">📦 Stock Opname</div>
-      <div class="skill-pill">🧾 Administrasi Nota</div>
+      <div class="skill-pill">&#9749; Mesin Espresso</div>
+      <div class="skill-pill">&#9881; Mesin Grinder</div>
+      <div class="skill-pill">&#129371; Steam Susu</div>
+      <div class="skill-pill">&#128203; Kalibrasi SOP</div>
+      <div class="skill-pill">&#128187; Microsoft Excel</div>
+      <div class="skill-pill">&#128196; Microsoft Word</div>
+      <div class="skill-pill">&#128421; Sistem Kasir (POS)</div>
+      <div class="skill-pill">&#128101; Manajemen Tim</div>
+      <div class="skill-pill">&#128230; Stock Opname</div>
+      <div class="skill-pill">&#129534; Administrasi Nota</div>
     </div>
 
-    <!-- Education -->
+    <!-- Pendidikan -->
     <div class="fancy-divider mb-12 fade-up">
       <span class="section-label">Pendidikan</span>
     </div>
@@ -264,7 +269,7 @@
       <div class="exp-card">
         <p class="text-xs mb-2" style="color:var(--accent)">2017 – 2020</p>
         <h3 class="serif font-bold text-lg" style="color:var(--espresso)">SMA Dharma Bhakti</h3>
-        <p class="text-sm mt-1" style="color:var(--latte)">Palembang · Jurusan IPA</p>
+        <p class="text-sm mt-1" style="color:var(--latte)">Palembang &middot; Jurusan IPA</p>
       </div>
       <div class="exp-card">
         <p class="text-xs mb-2" style="color:var(--accent)">2014 – 2017</p>
@@ -280,7 +285,7 @@
   </div>
 </section>
 
-<!-- KONTAK -->
+<!-- ===== KONTAK ===== -->
 <section id="kontak" class="py-24 px-6" style="background:var(--espresso)">
   <div class="max-w-5xl mx-auto text-center">
     <p class="section-label mb-4 fade-up" style="color:var(--steam)">Kontak</p>
@@ -288,17 +293,17 @@
     <p class="mb-12 fade-up" style="color:var(--steam)">Palembang, Sumatera Selatan</p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto fade-up">
-      <a href="tel:+62895605394796" class="contact-chip flex-1 justify-center" style="color:var(--espresso)">
-        <span style="color:var(--accent)">📞</span>
+      <a href="tel:+62895605394796" class="contact-chip flex-1 justify-center">
+        <span style="color:var(--accent)">&#128222;</span>
         <span>+62 895-6053-94796</span>
       </a>
-      <a href="mailto:sitisarahanisa@gmail.com" class="contact-chip flex-1 justify-center" style="color:var(--espresso)">
-        <span style="color:var(--accent)">✉️</span>
+      <a href="mailto:sitisarahanisa@gmail.com" class="contact-chip flex-1 justify-center">
+        <span style="color:var(--accent)">&#9993;</span>
         <span>sitisarahanisa@gmail.com</span>
       </a>
     </div>
 
-    <p class="mt-16 text-xs fade-up" style="color:var(--latte)">© 2025 Siti Sarah Annisa · Dibuat dengan ♥ dari Palembang</p>
+    <p class="mt-16 text-xs fade-up" style="color:var(--latte)">&copy; 2025 Siti Sarah Annisa &middot; Dibuat dengan &#9825; dari Palembang</p>
   </div>
 </section>
 
