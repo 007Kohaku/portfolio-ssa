@@ -1,11 +1,11 @@
 /* ===== CSS VARIABLES ===== */
 :root {
-  --cream: #F5EFE6;
-  --espresso: #2C1A0E;
-  --latte: #A0724A;
-  --foam: #EDE0D0;
-  --steam: #D4B896;
-  --accent: #C97B3A;
+  --cream: #fbd9e0;
+  --espresso: #bc0035;
+  --latte: #B5687E;
+  --foam: #edd0e2;
+  --steam: #F4B8C8;
+  --accent: #E8436A;
 }
 
 /* ===== RESET & BASE ===== */
